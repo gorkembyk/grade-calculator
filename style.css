@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.input-group input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #cddc39;
+    border-radius: 8px;
+    font-size: 1.1em;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input[type="number"]:focus {
+    border-color: #8bc34a;
+    box-shadow: 0 0 8px rgba(139, 195, 74, 0.3);
+}
+
+button {
+    background-color: #8bc34a;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #7cb342;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    background-color: #e8f5e9;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px dashed #aed581;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+}
+
+.language-selector {
+    margin-bottom: 20px;
+}
+
+.language-selector button {
+    width: auto;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-size: 0.9em;
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+
+.language-selector button:hover {
+    background-color: #e0e0e0;
+    transform: none;
+}

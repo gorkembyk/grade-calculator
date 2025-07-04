@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle">Vize Final Not Hesaplama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button onclick="setLanguage('tr')">Türkçe</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+
+        <h1 data-key="mainHeading">Vize Final Not Hesaplama</h1>
+        <div class="input-group">
+            <label for="vizeNotu" data-key="midtermScoreLabel">Vize Notu:</label>
+            <input type="number" id="vizeNotu" min="0" max="100" placeholder="0-100 arası">
+        </div>
+        <div class="input-group">
+            <label for="finalNotu" data-key="finalScoreLabel">Final Notu:</label>
+            <input type="number" id="finalNotu" min="0" max="100" placeholder="0-100 arası">
+        </div>
+        <div class="input-group">
+            <label for="vizeAgirligi" data-key="midtermWeightLabel">Vize Ağırlığı (%):</label>
+            <input type="number" id="vizeAgirligi" min="0" max="100" value="40" placeholder="Örn: 40">
+        </div>
+        <div class="input-group">
+            <label for="finalAgirligi" data-key="finalWeightLabel">Final Ağırlığı (%):</label>
+            <input type="number" id="finalAgirligi" min="0" max="100" value="60" placeholder="Örn: 60">
+        </div>
+        <button id="calculateButton" data-key="calculateButtonText">Hesapla</button>
+        <div id="result" data-key="initialResultText">Ortalama: --</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
